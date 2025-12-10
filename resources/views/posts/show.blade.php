@@ -30,24 +30,7 @@
 
             <!-- Content -->
             <div class="prose prose-lg prose-invert mx-auto">
-                <p>
-                    This is a placeholder for the actual blog post content. In a real application, this would be retrieved from a database or a markdown file.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <h2>Subheading</h2>
-                <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <blockquote>
-                    <p>
-                        "The best way to predict the future is to invent it."
-                    </p>
-                </blockquote>
-                <p>
-                   More detailed content would go here, explaining the topic in depth with code snippets, images, and other rich media.
-                </p>
+                {!! $post['content'] !!}
             </div>
 
             <!-- Author -->
