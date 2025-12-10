@@ -59,4 +59,15 @@ class PageController extends Controller
     {
         return view('contact');
     }
+
+    public function showPost($slug)
+    {
+        $post = collect($this->posts)->firstWhere('slug', $slug);
+
+        if (!$post) {
+            abort(404);
+        }
+
+        return view('posts.show', ['post' => $post]);
+    }
 }

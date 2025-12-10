@@ -26,7 +26,7 @@
                     </div>
                     <div class="group relative">
                         <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-indigo-400 transition-colors">
-                            <a href="#">
+                            <a href="{{ route('blog.show', $post['slug']) }}">
                                 <span class="absolute inset-0"></span>
                                 {{ $post['title'] }}
                             </a>

@@ -11,12 +11,12 @@
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div class="md:w-2/3">
                 <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight mb-6">
-                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Sevylo</span>.
-                    <br>I build web experiences.
+                    Building <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Digital Solutions</span>
+                    <br>One pixel at a time.
                 </h1>
                 <p class="text-xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
-                    A passionate developer focused on creating intuitive and dynamic user experiences. 
-                    Specializing in modern web technologies and clean code.
+                    I'm Sevylo, a passionate developer creating intuitive and dynamic user experiences. 
+                    Specializing in modern web technologies to bring ideas to life.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ url('/contact') }}" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-slate-900 bg-indigo-400 hover:bg-indigo-300 transition-colors duration-200">
@@ -55,8 +55,12 @@
                 <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10 group">
                     <div class="h-48 bg-slate-800 relative overflow-hidden">
                         <!-- Placeholder for image -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center text-slate-600 group-hover:scale-105 transition-transform duration-500">
-                            <svg class="w-12 h-12 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-slate-800 flex items-center justify-center text-slate-600 group-hover:scale-105 transition-transform duration-500">
+                            <!-- Using a different icon or simple pattern as placeholder -->
+                            <div class="text-center p-6">
+                                <span class="block text-4xl mb-2">🚀</span>
+                                <span class="text-xs font-mono text-indigo-400/50">Article Cover</span>
+                            </div>
                         </div>
                     </div>
                     <div class="p-6">
@@ -66,12 +70,12 @@
                             <span class="text-slate-500">{{ $post['date'] }}</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">
-                            <a href="#">{{ $post['title'] }}</a>
+                            <a href="{{ route('blog.show', $post['slug']) }}">{{ $post['title'] }}</a>
                         </h3>
                         <p class="text-slate-400 text-sm line-clamp-2 mb-4">
                             {{ $post['excerpt'] }}
                         </p>
-                        <a href="#" class="inline-flex items-center text-sm font-medium text-white hover:text-indigo-400 transition-colors">
+                        <a href="{{ route('blog.show', $post['slug']) }}" class="inline-flex items-center text-sm font-medium text-white hover:text-indigo-400 transition-colors">
                             Read more
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                         </a>

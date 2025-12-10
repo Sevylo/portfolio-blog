@@ -20,17 +20,17 @@
             <div class="flex justify-between h-16 items-center">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="{{ url('/') }}" class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400 hover:opacity-80 transition-opacity">
-                        DevPortfolio
+                    <a href="{{ url('/') }}" class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400 hover:opacity-80 transition-opacity">
+                        My Portfolio
                     </a>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="{{ url('/') }}" class="text-sm font-medium hover:text-indigo-400 transition-colors {{ Request::is('/') ? 'text-indigo-400' : 'text-slate-300' }}">Home</a>
-                    <a href="{{ url('/about') }}" class="text-sm font-medium hover:text-indigo-400 transition-colors {{ Request::is('about') ? 'text-indigo-400' : 'text-slate-300' }}">About</a>
-                    <a href="{{ url('/blog') }}" class="text-sm font-medium hover:text-indigo-400 transition-colors {{ Request::is('blog*') ? 'text-indigo-400' : 'text-slate-300' }}">Blog</a>
-                    <a href="{{ url('/contact') }}" class="text-sm font-medium hover:text-indigo-400 transition-colors {{ Request::is('contact') ? 'text-indigo-400' : 'text-slate-300' }}">Contact</a>
+                    <a href="{{ url('/') }}" class="text-lg font-medium hover:text-indigo-400 transition-colors {{ Request::is('/') ? 'text-indigo-400' : 'text-slate-300' }}">Home</a>
+                    <a href="{{ url('/about') }}" class="text-lg font-medium hover:text-indigo-400 transition-colors {{ Request::is('about') ? 'text-indigo-400' : 'text-slate-300' }}">About</a>
+                    <a href="{{ url('/blog') }}" class="text-lg font-medium hover:text-indigo-400 transition-colors {{ Request::is('blog*') ? 'text-indigo-400' : 'text-slate-300' }}">Blog</a>
+                    <a href="{{ url('/contact') }}" class="text-lg font-medium hover:text-indigo-400 transition-colors {{ Request::is('contact') ? 'text-indigo-400' : 'text-slate-300' }}">Contact</a>
                 </div>
 
                 <!-- Mobile Menu Button (Simple implementation) -->
@@ -66,7 +66,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <span class="text-xl font-bold text-slate-100">DevPortfolio</span>
+                    <span class="text-xl font-bold text-slate-100">My Portfolio</span>
                     <p class="text-slate-400 text-sm mt-1">Building the future, one commit at a time.</p>
                 </div>
                 <div class="flex space-x-6">
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="mt-8 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
-                &copy; {{ date('Y') }} DevPortfolio. All rights reserved.
+                &copy; {{ date('Y') }} My Portfolio. All rights reserved.
             </div>
         </div>
     </footer>
